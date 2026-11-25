@@ -1,0 +1,95 @@
+{
+  "model": "Logistic Regression",
+  "best_params": {
+    "C": 3
+  },
+  "decision_threshold": 0.3,
+  "risk_tiers": {
+    "high_min": 0.5,
+    "medium_min": 0.3
+  },
+  "cost_assumptions": {
+    "offer_cost": 1.0,
+    "customer_value": 8.0,
+    "retention_success_rate": 0.4
+  },
+  "test_metrics_at_threshold": {
+    "Accuracy": 0.7488,
+    "Precision": 0.5184,
+    "Recall": 0.754,
+    "F1": 0.6144,
+    "ROC-AUC": 0.8419,
+    "PR-AUC": 0.6305
+  },
+  "calibration": {
+    "brier_score": 0.135,
+    "brier_reference_no_skill": 0.1949
+  },
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "SeniorCitizen",
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "encoded_feature_means": {
+    "num__tenure": -0.0,
+    "num__MonthlyCharges": -0.0,
+    "num__TotalCharges": 0.0,
+    "bin__SeniorCitizen": 0.163294,
+    "cat__gender_Male": 0.50284,
+    "cat__Partner_Yes": 0.484381,
+    "cat__Dependents_Yes": 0.298012,
+    "cat__PhoneService_Yes": 0.900781,
+    "cat__MultipleLines_No": 0.476571,
+    "cat__MultipleLines_No phone service": 0.099219,
+    "cat__MultipleLines_Yes": 0.42421,
+    "cat__InternetService_DSL": 0.343805,
+    "cat__InternetService_Fiber optic": 0.440717,
+    "cat__InternetService_No": 0.215477,
+    "cat__OnlineSecurity_No": 0.49645,
+    "cat__OnlineSecurity_No internet service": 0.215477,
+    "cat__OnlineSecurity_Yes": 0.288072,
+    "cat__OnlineBackup_No": 0.43344,
+    "cat__OnlineBackup_No internet service": 0.215477,
+    "cat__OnlineBackup_Yes": 0.351083,
+    "cat__DeviceProtection_No": 0.438765,
+    "cat__DeviceProtection_No internet service": 0.215477,
+    "cat__DeviceProtection_Yes": 0.345758,
+    "cat__TechSupport_No": 0.491835,
+    "cat__TechSupport_No internet service": 0.215477,
+    "cat__TechSupport_Yes": 0.292687,
+    "cat__StreamingTV_No": 0.395101,
+    "cat__StreamingTV_No internet service": 0.215477,
+    "cat__StreamingTV_Yes": 0.389421,
+    "cat__StreamingMovies_No": 0.393504,
+    "cat__StreamingMovies_No internet service": 0.215477,
+    "cat__StreamingMovies_Yes": 0.391019,
+    "cat__Contract_Month-to-month": 0.550586,
+    "cat__Contract_One year": 0.2082,
+    "cat__Contract_Two year": 0.241214,
+    "cat__PaperlessBilling_Yes": 0.591232,
+    "cat__PaymentMethod_Bank transfer (automatic)": 0.220802,
+    "cat__PaymentMethod_Credit card (automatic)": 0.2153,
+    "cat__PaymentMethod_Electronic check": 0.335641,
+    "cat__PaymentMethod_Mailed check": 0.228257
+  },
+  "library_versions": {
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.2"
+  }
+}
