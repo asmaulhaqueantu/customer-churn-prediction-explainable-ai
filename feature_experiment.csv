@@ -1,0 +1,5 @@
+Variant,CV ROC-AUC,CV PR-AUC,ROC-AUC std
+Current features (production),0.8464,0.6616,0.0128
++ service count and price per add-on slot,0.8463,0.661,0.0125
++ all engineered features,0.8464,0.663,0.0122
+Without TotalCharges (+ engineered),0.8461,0.6618,0.0121

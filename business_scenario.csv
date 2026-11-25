@@ -1,0 +1,5 @@
+Strategy,Customers contacted,Churners reached,Total cost (units),Saving vs do nothing (units)
+Do nothing,0,0,2992.0,0.0
+Contact everyone,1409,374,3204.2,-212.2
+Contact a random 30%,425,120,3033.0,-41.0
+Model: contact p >= 0.30,544,282,2633.6,358.4
